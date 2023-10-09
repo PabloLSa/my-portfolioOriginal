@@ -1,0 +1,14 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerdark {
+    @apply bg-zinc-900;
+  }
+
+  .headerlight {
+    @apply bg-gradient-to-l from-white via-purple-300;
+  }
+}
