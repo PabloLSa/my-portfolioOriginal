@@ -30,7 +30,7 @@ function HeaderNavbar () {
           <MdOutlineFlashlightOff className="text-white text-3xl lg:text-4xl" />
 
           </div>
-          <div className='flex flex-col mt-4 justify-center ml-10'>
+          <div className='flex flex-col mt-4 justify-center ml-6 md:ml-10'>
             <h1 className="text-white font-bold text-xl lg:text-4xl"
               style={{
                 boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
@@ -70,7 +70,7 @@ function HeaderNavbar () {
 
             <li className="py-2 lg:py-0 ">
               <a
-                className="flex items-center text-purple-500 hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
+                className="flex items-center text-transparent bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
                 href="#about"
               >
                 <div className="w-3 mr-1 h-3 xl:w-4 xl:h-4 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></div>
@@ -80,7 +80,7 @@ function HeaderNavbar () {
             </li>
             <li className="py-2 lg:py-0">
               <a
-                className="text-purple-500 flex items-center hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
+                className="flex items-center text-transparent bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
                 href="#pricing"
               >
                 <div className="w-3 mr-1 h-3 xl:w-4 xl:h-4 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></div>
@@ -90,7 +90,7 @@ function HeaderNavbar () {
             </li>
             <li className="py-2 lg:py-0">
               <a
-                className="text-purple-500 flex items-center hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
+                className="flex items-center text-transparent bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
                 href="#contact"
               >
                 <div className="w-3 mr-1 h-3 xl:w-4 xl:h-4 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></div>
