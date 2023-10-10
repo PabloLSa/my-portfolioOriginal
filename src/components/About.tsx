@@ -6,8 +6,9 @@ const About = () => {
 
       <div className="flex flex-col md:flex-row bg-zinc-900 items-center justify-center" id="about">
 
-        <div className="flex items-center w-full md:w-1/2">
+        <div className="flex w-full md:w-1/2">
           <div className="mx-auto m-5">
+          
             <Image
               src="/myphoto.png"
               alt="Minha Foto"
@@ -15,6 +16,8 @@ const About = () => {
               height={200}
               className="rounded-full"
             />
+            
+            
           </div>
         </div>
 
