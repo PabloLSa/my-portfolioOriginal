@@ -62,7 +62,7 @@ function HeaderNavbar() {
 
 <div className="absolute inset-0 h-full scale-0 rounded-lg transition-all duration-100 group-hover:scale-75 group-hover:bg-[#C850C0]/40"></div>
         <svg
-          className="hover:shadow-xl fill-current opacity-70 text-[#C850C0] hover:opacity-100"
+          className="hover:shadow-xl fill-current text-[#C850C0] group-hover:text-cyan-500 transition-all duration-100"
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"
