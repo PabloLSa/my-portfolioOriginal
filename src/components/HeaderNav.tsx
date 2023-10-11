@@ -51,7 +51,7 @@ function HeaderNavbar() {
           </div>
         </div>
       </div>
-      <label htmlFor="menu-toggle" className="cursor-pointer mt-3 ml-1 lg:hidden block" onClick={toggleMenu}
+      <label htmlFor="menu-toggle" className="cursor-pointer mt-3 lg:hidden block" onClick={toggleMenu}
         style={{
           boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
           padding: '0.3em',
