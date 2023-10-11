@@ -37,7 +37,7 @@ function HeaderNavbar() {
             </span>
 
           </div>
-          <div className='flex flex-col mt-4 justify-center ml-2 lg:ml-10'>
+          <div className='flex flex-col mt-4 justify-center ml-0 lg:ml-10'>
             <h1 className={`font-bold text-2xl lg:text-4xl ${h1light}`}
               style={{
                 boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
