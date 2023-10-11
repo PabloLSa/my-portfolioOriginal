@@ -2,6 +2,7 @@
 import Image from "next/image";
 import themeContext from "@/context/themeContext";
 import { useContext, useState, useEffect } from "react";
+import AboutFramer from "@/utils/AboutFramer";
 
 const About = () => {
   const theme = useContext(themeContext);
@@ -44,12 +45,15 @@ const About = () => {
         </div>
 
         <div className="w-full md:w-1/2 text-left">
-          <h1 className={`font-bold text-2xl m-5 mb-0 ${themeText}`}>Desenvolvedor Web</h1>
-          <span className={`font-semibold text-xl m-5 ${themeText}`}> Campinas, São Paulo</span>
+          <h1 className={`font-bold text-2xl m-5 mb-0 texto-digitado ${themeText}`}>Desenvolvedor Web</h1>
+          <AboutFramer>
+          <span className={`font-semibold text-xl m-5 ${themeText}`}> Campinas, São Paulo
+          </span>
           <p className={`text-left font-semibold m-5 ${textlight}`}>
             Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
             Minha jornada nesse universo de programação tem sido incrível, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
           </p>
+          </AboutFramer>
         </div>
       </div>
 

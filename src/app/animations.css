@@ -1,0 +1,14 @@
+.texto-digitado {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: digitar 5s steps(40);
+}
+
+@keyframes digitar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
