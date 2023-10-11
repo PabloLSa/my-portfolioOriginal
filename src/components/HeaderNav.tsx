@@ -37,8 +37,8 @@ function HeaderNavbar() {
             </span>
 
           </div>
-          <div className='flex flex-col mt-4 justify-center ml-0 lg:ml-10'>
-            <h1 className={`font-bold text-2xl lg:text-4xl ${h1light}`}
+          <div className='flex flex-col mt-4 justify-center ml-5 lg:ml-10'>
+            <h1 className={`font-bold text-xl lg:text-4xl ${h1light}`}
               style={{
                 boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
                 padding: '0.3em',
@@ -51,7 +51,7 @@ function HeaderNavbar() {
           </div>
         </div>
       </div>
-      <label htmlFor="menu-toggle" className="cursor-pointer mt-3 ml-1 lg:hidden block" onClick={toggleMenu}
+      <label htmlFor="menu-toggle" className="cursor-pointer mt-3 ml-2 lg:hidden block" onClick={toggleMenu}
         style={{
           boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
           padding: '0.3em',
