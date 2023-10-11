@@ -51,7 +51,7 @@ function HeaderNavbar() {
           </div>
         </div>
       </div>
-      <label htmlFor="menu-toggle" className="cursor-pointer mt-3 ml-2 lg:hidden block" onClick={toggleMenu}
+      <label htmlFor="menu-toggle" className= "group relative cursor-pointer mt-3 ml-2 lg:hidden block" onClick={toggleMenu}
         style={{
           boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
           padding: '0.3em',
@@ -59,8 +59,10 @@ function HeaderNavbar() {
           whiteSpace: 'nowrap'
         }}
       >
+
+<div className="absolute inset-0 h-full scale-0 rounded-lg transition-all duration-800 group-hover:scale-100 group-hover:bg-[#C850C0]/40"></div>
         <svg
-          className="fill-current opacity-10  text-[#C850C0] hover:opacity-100"
+          className="hover:shadow-xl fill-current opacity-30 text-[#C850C0] hover:opacity-100"
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"
