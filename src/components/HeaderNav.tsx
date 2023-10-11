@@ -29,7 +29,7 @@ function HeaderNavbar() {
       <div className="flex-1 flex justify-between items-center">
         <div className="flex text-lg font-semibold backdrop-filter">
           <div className="flex items-center py-2 lg:py-0">
-            <span className={`text-3xl lg:text-4xl mt-5 ${h1light} hover:text-[#C850C0]`}>
+            <span className={`text-3xl lg:text-4xl mt-5 mr-1 ${h1light} hover:text-[#C850C0]`}>
             <button onClick={() => theme.toogleTheme()}>
               {theme.color === 'dark' ? <MdOutlineFlashlightOff /> : <MdOutlineFlashlightOn />}
               </button>
@@ -51,7 +51,7 @@ function HeaderNavbar() {
           </div>
         </div>
       </div>
-      <label htmlFor="menu-toggle" className="cursor-pointer mt-3 lg:hidden block" onClick={toggleMenu}
+      <label htmlFor="menu-toggle" className="cursor-pointer mt-3 ml-1 lg:hidden block" onClick={toggleMenu}
         style={{
           boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
           padding: '0.3em',
