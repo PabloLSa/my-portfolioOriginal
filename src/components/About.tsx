@@ -28,8 +28,10 @@ const About = () => {
     <>
 
       <div className={`flex flex-col md:flex-row items-center justify-center ${isDark}`} id="about">
+      
 
         <div className="flex w-full md:w-1/2">
+
           <div className="mx-auto m-5">
 
             <Image
