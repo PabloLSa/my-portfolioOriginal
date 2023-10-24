@@ -53,7 +53,7 @@ const Carousel = () => {
 
   return (
 
-    <div className={`w-7/12 flex text-center rounded-lg bg-black items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
+    <div className={`w-full lg:mt-24 flex text-center rounded-lg bg-black items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
         <button type="button" className={`w-3 h-3 rounded-full ${buttonClasses[0]}`} aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
         <button type="button" className={`w-3 h-3 rounded-full ${buttonClasses[1]}`} aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
@@ -71,7 +71,7 @@ const Carousel = () => {
 
           <div className="flex flex-col items-center justify-center h-full text-center ">
           <a href="https://react.dev/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125">
-              <FaReact className="mr-2 text-4xl sm:text-5xl xl:text-6xl" />
+              <FaReact className="mr-2 text-8xl sm:text-7xl xl:text-9xl" />
               <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">React</span>
             </a>
           </div>
@@ -85,7 +85,7 @@ const Carousel = () => {
 
           <div className="flex flex-col items-center justify-center h-full text-center ">
           <a href="https://tailwindcss.com/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
-              <SiTailwindcss className="mr-2 text-4xl sm:text-5xl xl:text-6xl" />
+              <SiTailwindcss className="mr-2 text-8xl sm:text-7xl xl:text-9xl" />
               <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Tailwind</span>
             </a>
          
@@ -97,7 +97,7 @@ const Carousel = () => {
 
           <div className="flex flex-col items-center justify-center h-full text-center ">
           <a href="https://nextjs.org/docs" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
-              <TbBrandNextjs className="mr-2 text-4xl sm:text-5xl xl:text-6xl" />
+              <TbBrandNextjs className="mr-2 text-8xl sm:text-7xl xl:text-9xl" />
               <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Next.js</span>
             </a>
           </div>
@@ -109,7 +109,7 @@ const Carousel = () => {
 
           <div className="flex flex-col items-center justify-center h-full text-center ">
             <a href="https://www.figma.com/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
-              <BiLogoFigma className="mr-2 text-4xl sm:text-5xl xl:text-6xl" />
+              <BiLogoFigma className="mr-2 text-8xl sm:text-7xl xl:text-9xl" />
               <span className="opacity-0 top-[-30px]  group-hover:opacity-100 absolute left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Figma</span>
             </a>
           </div>

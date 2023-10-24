@@ -62,10 +62,13 @@ function Contact() {
 
   return (
     <>
-  <div className={`flex flex-col mt-10 lg:flex-row`}>
+  <div className={`flex flex-col mt-10 lg:flex-row`} id="contact">
         {/* Card de Contato */}
 
-        <div className="p-5 lg:w-1/2">
+        <div className="p-5 lg:w-1/2 hover:text-[#C850C0]">
+          <div className="font-semibold text-2xl text-center  text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text">
+            Tecnologias Essenciais
+          </div>
           <Carousel />
         </div>
         
