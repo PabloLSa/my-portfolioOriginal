@@ -66,10 +66,17 @@ function Contact() {
         {/* Card de Contato */}
 
         <div className="p-5 lg:w-1/2 hover:text-[#C850C0]">
-          <div className="font-semibold text-2xl text-center  text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text">
-            Tecnologias Essenciais
-          </div>
-          <Carousel />
+          
+        <div className="mt-2 text-center">
+          
+                <p className="flex items-center text-sm text-purple-600 md:text-lg">
+                    <MdEmail className="mr-2" />pablolandimdesa@gmail.com
+                  </p>
+                  <p className="flex items-center text-sm text-purple-600 md:text-lg">
+                    <BsFillTelephonePlusFill className="mr-2" /> (19)99628-6293
+                  </p>
+                </div>
+          
         </div>
         
         {/* Formulário */}
@@ -112,14 +119,6 @@ function Contact() {
                 <button className="relative w-48 h-12 overflow-hidden text-lg font-bold text-white bg-purple-500 hover:bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-2xl" type="submit">
                   Enviar Mensagem
                 </button>
-                <div className="mt-2 text-center">
-                <p className="flex items-center text-sm text-purple-600 md:text-lg">
-                    <MdEmail className="mr-2" />pablolandimdesa@gmail.com
-                  </p>
-                  <p className="flex items-center text-sm text-purple-600 md:text-lg">
-                    <BsFillTelephonePlusFill className="mr-2" /> (19)99628-6293
-                  </p>
-                </div>
                 
               </div>
             </div>

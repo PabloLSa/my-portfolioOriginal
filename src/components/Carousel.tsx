@@ -1,31 +1,28 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-// import {
-//   AiOutlineArrowLeft, AiOutlineArrowRight
-// } from "react-icons/ai";
+
 import { BiLogoFigma } from 'react-icons/bi';
-import { useContext } from 'react';
+import { useContext,  useState, useEffect  } from 'react';
 import { FaReact } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
+import AboutFramer from '@/utils/AboutFramer';
+import themeContext from "@/context/themeContext";
+
 
 
 const Carousel = () => {
+  const theme = useContext(themeContext);
+  const [isDark, setIsDark] = useState("bg-gradient-to-br from-zinc-900 to-zinc-800");
   const totalSlides = 4; // Número total de slides
   const [slideIndex, setSlideIndex] = useState(0);
   const [buttonClasses, setButtonClasses] = useState(["bg-white", "bg-white", "bg-white, bg-white"]);
-  const [containerContact, setContainerContact] = useState('bg-dark');
 
+  useEffect(() => {
 
-  // const handlePrevClick = () => {
-  //   // Diminui o índice do slide atual para mostrar o slide anterior
-  //   setSlideIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
-  // };
+    setIsDark(theme.color === 'light' ? 'bg-gradient-to-l from-white via-purple-300' : 'bg-gradient-to-bl from-zinc-800 to-zinc-800');
 
-  // const handleNextClick = () => {
-  //   // Aumenta o índice do slide atual para mostrar o próximo slide
-  //   setSlideIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-  // };
+  }, [theme.color]);
+ 
   useEffect(() => {
     // Atualiza as classes dos botões com base no slide atual
     const updatedClasses = Array(totalSlides).fill("bg-white");
@@ -33,13 +30,7 @@ const Carousel = () => {
     setButtonClasses(updatedClasses);
   }, [slideIndex, totalSlides]);
 
-  //  useEffect(() => {
-  //    setContainerContact(
-  //      theme.color === 'light'
-  //        ? 'container-contact-light'
-  //        : 'zinc-800'
-  //    );
-  //  }, [theme.color]);
+ ;
 
    useEffect(() => {
      const carouselLoop = setInterval(() => {
@@ -53,14 +44,18 @@ const Carousel = () => {
 
   return (
 
-    <div className={`w-full lg:mt-24 flex text-center rounded-lg bg-black items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
+    <AboutFramer>
+    <div className={`w-full flex text-center ${isDark} items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
+      <div className="font-semibold text-2xl text-center  text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text absolute top-0 left-1/2 transform -translate-x-1/2">
+            Tecnologias Essenciais
+          </div>
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
         <button type="button" className={`w-3 h-3 rounded-full ${buttonClasses[0]}`} aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
         <button type="button" className={`w-3 h-3 rounded-full ${buttonClasses[1]}`} aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
         <button type="button" className={`w-3 h-3 rounded-full ${buttonClasses[2]}`} aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
         <button type="button" className={`w-3 h-3 rounded-full ${buttonClasses[3]}`} aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
       </div>
-
+      
       <div
         id="carousel"
         className="flex w-full transition-transform duration-300 ease-in-out"
@@ -117,26 +112,9 @@ const Carousel = () => {
 
         </div>
 
-
-
       </div>
-
-
-      {/* <button
-        id="prevButton"
-        className="absolute px-3 py-1 text-white transform -translate-y-1/2 bg-black rounded-full top-1/2 left-2 opacity-30 hover:opacity-50"
-        onClick={handlePrevClick}
-      >
-        <AiOutlineArrowLeft />
-      </button>
-      <button
-        id="nextButton"
-        className="absolute px-3 py-1 text-white transform -translate-y-1/2 bg-black rounded-full top-1/2 right-2 opacity-30 hover:opacity-50"
-        onClick={handleNextClick}
-      >
-        <AiOutlineArrowRight />
-      </button> */}
     </div>
+    </AboutFramer>  
 
   );
 };
