@@ -53,7 +53,7 @@ const Carousel = () => {
 
     <FramerMotion>
     <div className={`w-full flex text-center ${isDark} items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
-      <div className={`font-semibold text-2xl text-center absolute mt-3 top-0 left-1/2 transform -translate-x-1/2 ${themeText}`}>
+      <div className={`font-semibold text-base lg:text-3xl text-center absolute mt-3 top-0 left-1/2 transform -translate-x-1/2 ${themeText}`}>
             Tecnologias Essenciais
           </div>
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
