@@ -10,7 +10,6 @@ export default function Home() {
 <>
 <HeaderNavbar />
 <About />
-<Carousel />
 
 <Contact />
 </>

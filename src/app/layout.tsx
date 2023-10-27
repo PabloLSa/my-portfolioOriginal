@@ -1,6 +1,7 @@
 import './globals.css'
 import './animations.css'
 import './../components/header.css'
+import './../components/contact.css'
 import type { Metadata } from 'next'
 import ThemeProviderContext from '../context/themeProvider'
 

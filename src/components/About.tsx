@@ -26,9 +26,8 @@ const About = () => {
   }, [theme.color]);
 
   return (
-    <div className={`${isDark}`}>
-
-      <div className="flex h-auto flex-col md:flex-row items-center justify-center" id="about">
+    <>
+      <div className={`flex h-auto flex-col md:flex-row items-center justify-center ${isDark}`} id="about"> 
       
 
         <div className="flex w-full md:w-1/2">
@@ -59,7 +58,7 @@ const About = () => {
           </AboutFramer>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

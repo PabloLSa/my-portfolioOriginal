@@ -5,8 +5,8 @@ import { useContext,  useState, useEffect  } from 'react';
 import { FaReact } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
-import AboutFramer from '@/utils/AboutFramer';
 import themeContext from "@/context/themeContext";
+import FramerMotion from '@/utils/FramerMotion';
 
 
 
@@ -19,7 +19,7 @@ const Carousel = () => {
 
   useEffect(() => {
 
-    setIsDark(theme.color === 'light' ? 'bg-gradient-to-l from-white via-purple-300' : 'bg-gradient-to-bl from-zinc-800 to-zinc-800');
+    setIsDark(theme.color === 'light' ? 'bg-gradient-to-l from-white via-purple-300' : 'bg-gradient-to-bl from-zinc-900 to-zinc-800');
 
   }, [theme.color]);
  
@@ -44,9 +44,9 @@ const Carousel = () => {
 
   return (
 
-    <AboutFramer>
-    <div className={`w-full flex text-center ${isDark} items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
-      <div className="font-semibold text-2xl text-center  text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text absolute top-0 left-1/2 transform -translate-x-1/2">
+    <FramerMotion>
+    <div className={`w-full flex text-center ${isDark} mt-9 rounded-xl items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
+      <div className="font-semibold text-2xl text-center text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text absolute mt-3 top-0 left-1/2 transform -translate-x-1/2">
             Tecnologias Essenciais
           </div>
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -58,7 +58,7 @@ const Carousel = () => {
       
       <div
         id="carousel"
-        className="flex w-full transition-transform duration-300 ease-in-out"
+        className="flex w-full transition-transform duration-300 ease-in-out mt-10"
         style={{ transform: `translateX(-${slideIndex * 100}%)` }}
       >
 
@@ -114,7 +114,7 @@ const Carousel = () => {
 
       </div>
     </div>
-    </AboutFramer>  
+    </FramerMotion>  
 
   );
 };
