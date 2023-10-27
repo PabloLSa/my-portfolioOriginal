@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  
+  .span {
+    @apply flex
+    items-center
+    text-center
+    mt-2
+    ml-4 
+    mr-1 
+    mb-4
+    font-bold
+    text-2xl
+    hover:px-2 py-1
+    hover:cursor-pointer
+  }
+  }
+  
+
+
+

@@ -7,6 +7,7 @@ import validator from 'validator';
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephonePlusFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import Carousel from "./Carousel";
+import ChatButton from "./ChatButton";
 
 
 
@@ -66,21 +67,7 @@ function Contact() {
         {/* Card de Contato */}
 
         <div className="p-5 lg:w-1/2 hover:text-[#C850C0]">
-        <span className="span">
-          <span className="ml-2 text-center font-semibold text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text"
-          >Conecte-se</span>
-          <a href="https://www.linkedin.com/in/pablolandimdesadev/" target="_blank" rel="noreferrer"
-            className="mx-2 text-xl text-purple-600 transition-transform duration-300 hover:text-blue-600 hover:scale-125"
-          >
-            <BsLinkedin />
-          </a>
-          <a href="https://github.com/PabloLSa" target="_blank" rel="noreferrer"
-            className="mx-2 text-xl text-purple-600 transition-transform duration-300 hover:text-gray-600 hover:scale-125"
-          >
-            <BsGithub />
-          </a>
-        </span>
-        <h1 className={`font-semibold text-3xl text-center mb-4`}>Contato</h1>
+
           <form className={`mb-6 text-3xl text-center rounded-lg`}
             onSubmit={sendEmail}
             style={{
@@ -120,15 +107,7 @@ function Contact() {
                   Enviar Mensagem
                 </button>
 
-                <div className="mt-2 text-center">
 
-                  <p className="flex items-center text-sm text-purple-600 md:text-lg">
-                    <MdEmail className="mr-2" />pablolandimdesa@gmail.com
-                  </p>
-                  <p className="flex items-center text-sm text-purple-600 md:text-lg">
-                    <BsFillTelephonePlusFill className="mr-2" /> (19)99628-6293
-                  </p>
-                </div>
 
               </div>
             </div>
@@ -138,12 +117,14 @@ function Contact() {
 
         {/* Formulário */}
         <div className="p-5 lg:w-1/2">
-          <Carousel />
-                  </div>
-      </div>
+
+<ChatButton />
+    
+        </div>
+          </div>
+
 
     </>
-
   );
 }
 export default Contact;

@@ -4,6 +4,7 @@ import themeContext from "@/context/themeContext";
 import { useContext, useState, useEffect } from "react";
 import AboutFramer from "@/utils/AboutFramer";
 import Carousel from "./Carousel";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const About = () => {
   const theme = useContext(themeContext);
@@ -55,6 +56,20 @@ const About = () => {
             Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
             Minha jornada nesse universo de programação tem sido incrível, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
           </p>
+          <span className="span">
+          <span className={`ml-2 text-center ${themeText}`}
+          >Conecte-se</span>
+          <a href="https://www.linkedin.com/in/pablolandimdesadev/" target="_blank" rel="noreferrer"
+            className="mx-2 text-xl text-purple-600 transition-transform duration-300 hover:text-blue-600 hover:scale-125"
+          >
+            <BsLinkedin />
+          </a>
+          <a href="https://github.com/PabloLSa" target="_blank" rel="noreferrer"
+            className="mx-2 text-xl text-purple-600 transition-transform duration-300 hover:text-gray-600 hover:scale-125"
+          >
+            <BsGithub />
+          </a>
+        </span>
           </AboutFramer>
         </div>
       </div>

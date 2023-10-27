@@ -4,17 +4,7 @@
 
 @layer components{
   
-  .span {
-    @apply flex items-center
-    text-center
-    mt-2 ml-4 mr-1 
-    font-sans 
-    text-3xl 
-    mb-4
-    font-bold
-  border-purple-600 
-    hover:border rounded-xl
-  }
+  
 
 }
 
