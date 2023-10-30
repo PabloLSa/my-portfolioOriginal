@@ -9,6 +9,6 @@
   }
 
   .headerlight {
-    @apply bg-gradient-to-l from-white via-purple-300;
+    @apply bg-gradient-to-l from-white via-cyan-300 ;
   }
 }

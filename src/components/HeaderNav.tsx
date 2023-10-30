@@ -15,7 +15,7 @@ function HeaderNavbar() {
 
     setIsDark(theme.color === 'light' ? 'headerlight' : 'headerdark');
 
-    setH1Light(theme.color === 'light' ? 'text-black' : 'text-white');
+    setH1Light(theme.color === 'light' ? 'text-blue-950' : 'text-white');
 
 
   }, [theme.color]);

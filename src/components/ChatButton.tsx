@@ -13,7 +13,7 @@ const ChatButton = () => {
             }}
           >
             <svg
-              className="w-10 h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16"
+              className="w-6 h-6 lg:w-6 lg:h-6 xl:w-10 xl:h-10"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"

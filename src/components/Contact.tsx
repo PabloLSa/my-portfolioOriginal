@@ -8,6 +8,7 @@ import { MdEmail } from "react-icons/md";
 import { BsFillTelephonePlusFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import Carousel from "./Carousel";
 import ChatButton from "./ChatButton";
+import Image from "next/image";
 
 
 
@@ -66,7 +67,7 @@ function Contact() {
       <div className={`flex flex-col mt-10 lg:flex-row`} id="contact">
         {/* Card de Contato */}
 
-        <div className="p-5 lg:w-1/2 hover:text-[#C850C0]">
+        <div className="p-5 lg:w-1/2">
 
           <form className={`mb-6 text-3xl text-center rounded-lg`}
             onSubmit={sendEmail}
@@ -106,8 +107,14 @@ function Contact() {
                 <button className="relative w-48 h-12 overflow-hidden text-lg font-bold text-white bg-purple-500 hover:bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-2xl" type="submit">
                   Enviar Mensagem
                 </button>
-
-
+                <div className="p-8 text-left">
+                  <p className="flex items-center text-sm text-purple-600 md:text-lg">
+                    <MdEmail className="mr-2" />pablolandimdesa@gmail.com
+                  </p>
+                  <p className="flex items-center text-sm text-purple-600 md:text-lg">
+                    <BsFillTelephonePlusFill className="mr-2" /> (19)99628-6293
+                  </p>
+                </div>
 
               </div>
             </div>
@@ -118,10 +125,45 @@ function Contact() {
         {/* Formulário */}
         <div className="p-5 lg:w-1/2">
 
-<ChatButton />
-    
-        </div>
+          <div className="w-full p-5 mx-auto text-center items-center rounded-lg lg:mt-16" style={{
+            boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
+            padding: '0.4em',
+            borderRadius: '0.6em',
+            whiteSpace: 'nowrap',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}>
+            <Image
+              src="/background.png"
+              alt="BackGround linkendin"
+              width={600}
+              height={600}
+              className="rounded-lg"
+            />
+            <div className="container">
+              <span className="span">
+                <span className={`ml-2 text-center`}>Conecte-se</span>
+                <svg className="w-3.5 h-3.5 ml-2 mx-2 mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+                <a href="https://www.linkedin.com/in/pablolandimdesadev/" target="_blank" rel="noreferrer"
+                  className="mx-2 mt-1 text-xl text-purple-600 transition-transform duration-300 hover:text-blue-600 hover:scale-125"
+                >
+                  <BsLinkedin />
+                </a>
+                <a href="https://github.com/PabloLSa" target="_blank" rel="noreferrer"
+                  className="mx-2 mt-1 text-xl text-purple-600 transition-transform duration-300 hover:text-gray-600 hover:scale-125"
+                >
+                  <BsGithub />
+                </a>
+                <ChatButton />
+              </span>
+            </div>
           </div>
+        </div>
+
+      </div>
 
 
     </>

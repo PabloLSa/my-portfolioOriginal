@@ -20,7 +20,7 @@ const Carousel = () => {
 
   useEffect(() => {
 
-    setIsDark(theme.color === 'light' ? 'bg-gradient-to-l from-white via-purple-300' : 'bg-gradient-to-bl from-zinc-900 to-zinc-800');
+    setIsDark(theme.color === 'light' ? 'bg-gradient-to-l from-white via-cyan-300' : 'bg-gradient-to-bl from-zinc-900 to-zinc-800');
 
     setThemeText(
       theme.color === 'light'
