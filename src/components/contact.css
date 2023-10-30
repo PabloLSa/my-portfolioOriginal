@@ -5,7 +5,8 @@
 @layer components{
   
   .span {
-    @apply flex
+    @apply 
+    flex
     items-center
     text-center
     mt-2
@@ -16,8 +17,50 @@
     text-2xl
     hover:px-2 py-1
     hover:cursor-pointer
+    rounded-lg
   }
   
+  .containerDark {
+    @apply bg-gradient-to-br from-zinc-800 to-zinc-900;
+  }
 
+  .containerLight {
+    @apply bg-white;
+  }
+
+  .container-contact-light {
+
+    @apply bg-gradient-to-r from-white via-cyan-300;
+  
+  }
+  
+  .container-contact-dark {
+    @apply bg-zinc-900;
+  
+  }
+
+  .input-contact-light {
+
+    @apply w-full p-3 mb-4 border-0  rounded-lg md:text-xl text-black bg-blue-300 border-cyan-500 outline-none appearance-none hover:border placeholder:text-zinc-800;
+  
+  }
+
+
+.input-contact-dark {
+
+  @apply w-full p-3 mb-4 border-0 rounded-lg md:text-xl text-white bg-zinc-800 border-cyan-500 outline-none appearance-none hover:border;
+}
+
+.textarea-dark {
+
+  @apply w-full p-3 mb-4 border-0 rounded-lg md:text-xl text-white bg-zinc-800 border-cyan-500 hover:border ;
+
+}
+
+.textarea-white {
+
+  @apply w-full p-3 mb-4 border-0 rounded-lg md:text-xl border-cyan-500 outline-none appearance-none hover:border text-black bg-blue-300 placeholder:text-zinc-800;
+
+}
 }
 

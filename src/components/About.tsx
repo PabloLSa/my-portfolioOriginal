@@ -3,8 +3,6 @@ import Image from "next/image";
 import themeContext from "@/context/themeContext";
 import { useContext, useState, useEffect } from "react";
 import AboutFramer from "@/utils/AboutFramer";
-import Carousel from "./Carousel";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const About = () => {
   const theme = useContext(themeContext);
