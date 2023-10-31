@@ -134,12 +134,8 @@ function Contact() {
               >
                 <BsGithub />
               </a>
-              <a className="mx-2 mt-1 text-xl transition-transform duration-300 hover:scale-105">
-                <ChatButton />
-
-              </a>
             </span>
-            <div className="text-center mt-[-4px]">
+            <div className="text-center ml-0 lg:ml-2 mt-[-4px]">
               <p className="flex items-center text-sm text-purple-600 md:text-lg">
                 <MdEmail className="mr-2" />pablolandimdesa@gmail.com
               </p>
