@@ -6,8 +6,6 @@ import emailjs from '@emailjs/browser';
 import validator from 'validator';
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephonePlusFill, BsGithub, BsLinkedin } from "react-icons/bs";
-import ChatButton from "./ChatButton";
-import { Card } from 'flowbite-react';
 import Image from "next/image";
 
 
