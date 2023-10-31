@@ -3,7 +3,7 @@ const ChatButton = () => {
    return (
     <div className="relative">
       <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-        <button className="flex flex-col justify-around text-purple-500 rounded-lg">
+        <button className="flex flex-col justify-around text-purple-600 rounded-lg">
           <div
             style={{
               boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
@@ -16,7 +16,6 @@ const ChatButton = () => {
               className="w-6 h-6 lg:w-10 lg:h-10 xl:w-12 xl:h-12"
               fill="currentColor"
               viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 fillRule="evenodd"

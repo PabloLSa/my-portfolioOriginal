@@ -7,6 +7,7 @@ import validator from 'validator';
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephonePlusFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import ChatButton from "./ChatButton";
+import { Card } from 'flowbite-react';
 import Image from "next/image";
 
 
@@ -124,16 +125,16 @@ function Contact() {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
               </svg>
               <a href="https://www.linkedin.com/in/pablolandimdesadev/" target="_blank" rel="noreferrer"
-                className="mx-2 mt-1 text-2xl text-purple-600 transition-transform duration-300 hover:text-blue-600 hover:scale-125"
+                className="mx-2 mt-1 text-xl text-purple-600 transition-transform duration-300 hover:text-blue-600 hover:scale-125"
               >
                 <BsLinkedin />
               </a>
               <a href="https://github.com/PabloLSa" target="_blank" rel="noreferrer"
-                className="mx-2 mt-1 text-3xl text-purple-600 transition-transform duration-300 hover:text-gray-600 hover:scale-125"
+                className="mx-2 mt-1 text-2xl text-purple-600 transition-transform duration-300 hover:text-gray-600 hover:scale-125"
               >
                 <BsGithub />
               </a>
-              <a className="mx-2 mt-1 text-2xl transition-transform duration-300 hover:scale-105">
+              <a className="mx-2 mt-1 text-xl transition-transform duration-300 hover:scale-105">
                 <ChatButton />
 
               </a>
