@@ -92,7 +92,7 @@ function Contact() {
         {/* Card de Contato */}
 
         <div className="p-5 lg:w-1/2">
-          <div className={` mt-0 lg:mt-14 ${containerContact}`}
+          <div className={`mt-0 lg:mt-14 max-w-none max-h-none ${containerContact}`}
             style={{
               boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
               padding: '0.4em',
@@ -103,17 +103,13 @@ function Contact() {
               alignItems: 'center',
             }}
           >
-            <div className={`w-full p-8 mx-auto text-center items-center rounded-lg`} >
+            <div className={`w-full h-auto p-8 mx-auto text-center items-center rounded-lg`} >
             <Image
               src="/background.png"
               alt="BackGround linkendin"
               width={1000}
               height={1000}
               className="rounded-lg"
-              style={{
-                maxWidth: '100%', // A imagem não ficará maior que a largura do contêiner
-                height: 'auto',   // A altura será ajustada automaticamente
-              }}
             />
           </div>
             <span className="span">
