@@ -55,7 +55,7 @@ const Carousel = () => {
         <div className={`w-full flex text-center items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
 
 
-          <div className={`font-semibold text-base lg:text-3xl text-center absolute mt-3 top-0 left-1/2 transform -translate-x-1/2 ${themeText}`}>
+          <div className={`font-semibold text-xl lg:text-3xl text-center absolute mt-3 top-0 left-1/2 transform -translate-x-1/2 ${themeText}`}>
             Tecnologias Essenciais
           </div>
 

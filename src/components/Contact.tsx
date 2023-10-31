@@ -108,9 +108,13 @@ function Contact() {
             <Image
               src="/background.png"
               alt="BackGround linkendin"
-              width={800}
-              height={800}
+              width={1000}
+              height={1000}
               className="rounded-lg"
+              style={{
+                maxWidth: '100%', // A imagem não ficará maior que a largura do contêiner
+                height: 'auto',   // A altura será ajustada automaticamente
+              }}
             />
           </div>
             <span className="span">
