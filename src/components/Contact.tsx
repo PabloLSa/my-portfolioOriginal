@@ -7,6 +7,7 @@ import validator from 'validator';
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephonePlusFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
+import FramerMotion from "@/utils/FramerMotion";
 
 
 
@@ -90,8 +91,8 @@ function Contact() {
     <>
       <div className={`flex flex-col lg:flex-row ${container}`} id="contact">
         {/* Card de Contato */}
-
         <div className="p-5 lg:w-1/2">
+<FramerMotion>
           <div className={`mt-0 lg:mt-14 max-w-none max-h-none ${containerContact}`}
             style={{
               boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
@@ -140,12 +141,12 @@ function Contact() {
             </div>
           </div>
 
+            </FramerMotion>
         </div>
-
         {/* Formulário */}
         <div className="p-5 lg:w-1/2">
 
-
+<FramerMotion>
           <form className={`mb-6 text-3xl text-center rounded-lg mt-[-10px] lg:mt-6 ${containerContact}`}
             onSubmit={sendEmail}
             style={{
@@ -189,6 +190,7 @@ function Contact() {
               </div>
             </div>
           </form>
+          </FramerMotion>
 
 
         </div>
