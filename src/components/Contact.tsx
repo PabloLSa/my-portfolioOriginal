@@ -8,6 +8,7 @@ import { MdEmail } from "react-icons/md";
 import { BsFillTelephonePlusFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
 import FramerMotion from "@/utils/FramerMotion";
+import ScrollTop from "./ScrollToTopArrow";
 
 
 
@@ -186,7 +187,7 @@ function Contact() {
                   Enviar Mensagem
                 </button>
 
-
+<ScrollTop />
               </div>
             </div>
           </form>

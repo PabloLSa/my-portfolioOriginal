@@ -25,7 +25,7 @@ function HeaderNavbar() {
   };
 
   return (
-    <nav className={`lg:px-16 px-6 ${isDark} flex flex-wrap items-center lg:py-0 py-2`}>
+    <nav id="start" className={`lg:px-16 px-6 ${isDark} flex flex-wrap items-center lg:py-0 py-2`}>
       <div className="flex-1 flex justify-between items-center">
         <div className="flex text-lg font-semibold backdrop-filter">
           <div className="flex items-center py-2 lg:py-0">
@@ -80,7 +80,7 @@ function HeaderNavbar() {
             <li className="py-2 lg:py-0 ">
               <a
                 className="flex items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
-                href="#about" onClick={toggleMenu}
+                href="#about" 
               >
                 <div className="w-3 mr-1 h-3 xl:w-4 xl:h-4 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></div>
 
