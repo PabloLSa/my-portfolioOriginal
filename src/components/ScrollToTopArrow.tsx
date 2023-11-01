@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 
 const ScrollTop: React.FC = () => {
@@ -13,12 +14,8 @@ const ScrollTop: React.FC = () => {
       clearTimeout(scrollTimer);
       scrollTimer = setTimeout(() => {
         setIsScrolling(false);
-      }, 2000); // Altere o valor (em milissegundos) conforme necessário
+      }, 2500); // Altere o valor (em milissegundos) conforme necessário
 
-      // Remova o temporizador anterior se o usuário continuar a rolar
-      if (scrollTimer) {
-        clearTimeout(scrollTimer);
-      }
     };
 
     // Adicione um event listener para o evento de rolagem
@@ -33,15 +30,18 @@ const ScrollTop: React.FC = () => {
   return (
     <div>
       {isScrolling && (
-          <a className="fixed bottom-32 right-16 z-20 flex flex-col justify-around mb-5 mr-1 text-purple-500 rounded-lg shrink-0 grow-0 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10" href="#start">
+
+
+        <a className="fixed bottom-32 right-16 z-20 flex flex-col justify-around mb-5 mr-1 text-purple-600 rounded-lg shrink-0 grow-0 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10" href="#start">
 
 
 
           <svg
             className="w-10 h-10 lg:w-12 lg:h-12 xl:w-16 xl:h-16"
             fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            stroke-width="0.3"
+            stroke="#00B3A4" 
           >
             <path
               fillRule="evenodd"
@@ -49,9 +49,12 @@ const ScrollTop: React.FC = () => {
               clip-rule="evenodd"
             ></path>
           </svg>
-          
-          </a>
-          
+
+        </a>
+
+
+
+
       )}
     </div>
   );

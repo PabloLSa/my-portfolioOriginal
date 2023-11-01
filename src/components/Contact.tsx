@@ -183,16 +183,14 @@ function Contact() {
               ></textarea>
 
               <div className="mx-auto text-center">
-                <button className="relative w-48 h-12 overflow-hidden text-lg font-bold text-white bg-purple-500 hover:bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-2xl" type="submit">
+                <button className="relative w-48 h-12 overflow-hidden text-lg font-bold text-white bg-purple-600 hover:bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-2xl" type="submit">
                   Enviar Mensagem
                 </button>
 
-<ScrollTop />
               </div>
             </div>
           </form>
           </FramerMotion>
-
 
         </div>
 
