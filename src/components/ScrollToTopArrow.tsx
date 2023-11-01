@@ -10,11 +10,11 @@ const ScrollTop: React.FC = () => {
     const handleScroll = () => {
       setIsScrolling(true);
 
-      // Configurar um temporizador para esconder o botão após um período
+      // Configuração de um temporizador para esconder o botão após um período
       clearTimeout(scrollTimer);
       scrollTimer = setTimeout(() => {
         setIsScrolling(false);
-      }, 2500); // Altere o valor (em milissegundos) conforme necessário
+      }, 2000); // Altere o valor (em milissegundos) conforme necessário
 
     };
 
