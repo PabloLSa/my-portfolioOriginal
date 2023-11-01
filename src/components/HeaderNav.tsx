@@ -80,7 +80,7 @@ function HeaderNavbar() {
             <li className="py-2 lg:py-0 ">
               <a
                 className="flex items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
-                href="#about" 
+                href="#about" onClick={toggleMenu}
               >
                 <div className="w-3 mr-1 h-3 xl:w-4 xl:h-4 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></div>
 
