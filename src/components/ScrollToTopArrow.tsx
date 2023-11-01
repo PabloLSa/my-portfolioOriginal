@@ -29,9 +29,9 @@ const ScrollTop: React.FC = () => {
   }, []);
 
   return (
+<FramerMotion>
     <div>
       {isScrolling && (
-<FramerMotion>
 
         <a className="fixed bottom-32 right-16 z-20 flex flex-col justify-around mb-5 mr-1 text-purple-600 rounded-lg shrink-0 grow-0 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10" href="#start">
 
@@ -53,11 +53,11 @@ const ScrollTop: React.FC = () => {
 
         </a>
 
-</ FramerMotion>
 
 
-      )}
+)}
     </div>
+</ FramerMotion>
   );
 };
 
