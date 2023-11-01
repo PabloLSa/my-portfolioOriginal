@@ -12,7 +12,7 @@ const ChatButton = () => {
       <>
         <div className="relative" id="contact">
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-            <button className="fixed bottom-0 right-0 z-20 flex flex-col justify-around mb-5 mr-1 text-purple-600 rounded-lg shrink-0 grow-0 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10">
+            <button className="fixed bottom-0 right-0 z-20 flex flex-col justify-around mb-5 mr-1 text-purple-600 rounded-lg shrink-0 grow-0 right-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10">
               <div className="p-3 rounded-full"
                 style={{
                   boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
