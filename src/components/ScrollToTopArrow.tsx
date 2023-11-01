@@ -1,4 +1,5 @@
 'use client';
+import FramerMotion from '@/utils/FramerMotion';
 import React, { useState, useEffect } from 'react';
 
 const ScrollTop: React.FC = () => {
@@ -14,7 +15,7 @@ const ScrollTop: React.FC = () => {
       clearTimeout(scrollTimer);
       scrollTimer = setTimeout(() => {
         setIsScrolling(false);
-      }, 2000); // Altere o valor (em milissegundos) conforme necessário
+      }, 4000); // Altere o valor (em milissegundos) conforme necessário
 
     };
 
@@ -30,9 +31,9 @@ const ScrollTop: React.FC = () => {
   return (
     <div>
       {isScrolling && (
+<FramerMotion>
 
-
-        <a className="fixed bottom-16 right-14 z-20 flex flex-col justify-around mb-5 mr-1 text-purple-600 rounded-lg shrink-0 grow-0 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10" href="#start">
+        <a className="fixed bottom-32 right-16 z-20 flex flex-col justify-around mb-5 mr-1 text-purple-600 rounded-lg shrink-0 grow-0 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10" href="#start">
 
 
 
@@ -52,7 +53,7 @@ const ScrollTop: React.FC = () => {
 
         </a>
 
-
+</ FramerMotion>
 
 
       )}
