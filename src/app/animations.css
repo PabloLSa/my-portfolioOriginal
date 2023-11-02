@@ -1,7 +1,7 @@
 .texto-digitado {
   white-space: nowrap;
   overflow: hidden;
-  animation: digitar 4s steps(40);
+  animation: digitar 13s steps(40);
 }
 
 @keyframes digitar {

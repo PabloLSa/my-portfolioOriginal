@@ -15,7 +15,7 @@ const ScrollTop: React.FC = () => {
       clearTimeout(scrollTimer);
       scrollTimer = setTimeout(() => {
         setIsScrolling(false);
-      }, 2000); // Altere o valor (em milissegundos) conforme necessário
+      }, 1200); // Altere o valor (em milissegundos) conforme necessário
 
     };
 
