@@ -9,6 +9,7 @@ import { BsFillTelephonePlusFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import Image from "next/image";
 import FramerMotion from "@/utils/FramerMotion";
 import ScrollTop from "./ScrollToTopArrow";
+import AnimatedSocial from "./AnimatadeSocial";
 
 
 
@@ -186,7 +187,6 @@ function Contact() {
                 <button className="relative w-48 h-12 overflow-hidden text-lg font-bold text-white bg-purple-600 hover:bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-2xl" type="submit">
                   Enviar Mensagem
                 </button>
-
               </div>
             </div>
           </form>

@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import AnimatedSocial from "@/components/AnimatadeSocial";
 import Carousel from "@/components/Carousel";
 import ChatButton from "@/components/ChatButton";
 import Contact from "@/components/Contact";
@@ -15,7 +16,6 @@ export default function Home() {
 <Carousel />
 <Contact />
 <ScrollTop />
-
 <ChatButton />
 </>
   )

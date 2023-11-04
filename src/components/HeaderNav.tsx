@@ -25,7 +25,7 @@ function HeaderNavbar() {
   };
 
   return (
-    <nav id="start" className={`lg:px-16 px-6 ${isDark} flex flex-wrap items-center lg:py-0 py-2`}>
+    <nav id="header" className={`lg:px-16 px-6 ${isDark} flex flex-wrap items-center lg:py-0 py-2`}>
       <div className="flex-1 flex justify-between items-center">
         <div className="flex text-lg font-semibold backdrop-filter">
           <div className="flex items-center py-2 lg:py-0">
