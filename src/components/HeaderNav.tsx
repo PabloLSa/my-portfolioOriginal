@@ -2,6 +2,8 @@
 import React, { useEffect, useContext, useState } from 'react';
 import ThemeContext from '../context/themeContext';
 import { MdOutlineFlashlightOff, MdOutlineFlashlightOn } from 'react-icons/md';
+import MenuHambuger from './MenuHambuger';
+import CloseMenu from './CloseMenu';
 
 
 function HeaderNavbar() {
@@ -10,6 +12,15 @@ function HeaderNavbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState("headerdark");
   const[h1light, setH1Light] = useState("text-white");
+
+  useEffect(() => {
+
+    setIsDark(theme.color === 'light' ? 'headerlight' : 'headerdark');
+
+    setH1Light(theme.color === 'light' ? 'text-blue-950' : 'text-white');
+
+
+  }, [theme.color]);
 
   useEffect(() => {
 
@@ -51,26 +62,21 @@ function HeaderNavbar() {
           </div>
         </div>
       </div>
-      <label htmlFor="menu-toggle" className= "group relative cursor-pointer mt-3 ml-2 lg:hidden block" onClick={toggleMenu}
-        style={{
+      <label htmlFor="menu-toggle" className= "cursor-pointer mt-3 ml-2 lg:hidden block" onClick={toggleMenu}
+       
+      >
+
+        <button className="group relative"
+         style={{
           boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
           padding: '0.3em',
           borderRadius: '0.5em',
           whiteSpace: 'nowrap'
         }}
-      >
+         onClick = {() => toggleMenu()}>{menuOpen ? <CloseMenu /> : <MenuHambuger />}
 
 <div className="absolute inset-0 h-full scale-0 rounded-lg transition-all duration-100 group-hover:scale-75 group-hover:bg-[#C850C0]/40"></div>
-        <svg
-          className="hover:shadow-xl fill-current text-[#C850C0] group-hover:text-cyan-500 transition-all duration-100"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-        >
-          <title>menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-        </svg>
+        </button>
       </label>
       <input className="hidden" type="checkbox" id="menu-toggle" />
       <div className={`lg:flex lg:items-center lg:w-auto w-full ${menuOpen ? 'block' : 'hidden'}`} id="menu-toogle">
