@@ -159,9 +159,9 @@ function Contact() {
               whiteSpace: 'nowrap',
             }}
           >
-            <MenuMotion>
+           
             <h1 className={`font-semibold mb-4 ${themeText}`}>Mensagem</h1>
-            </MenuMotion>
+            
             <div className="flex flex-col max-w-xl m-auto lg:flex-row lg:flex-wrap">
               <input
                 type="text"
