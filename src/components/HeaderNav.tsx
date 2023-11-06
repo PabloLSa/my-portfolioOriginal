@@ -23,15 +23,6 @@ function HeaderNavbar() {
 
   }, [theme.color]);
 
-  useEffect(() => {
-
-    setIsDark(theme.color === 'light' ? 'headerlight' : 'headerdark');
-
-    setH1Light(theme.color === 'light' ? 'text-blue-950' : 'text-white');
-
-
-  }, [theme.color]);
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
