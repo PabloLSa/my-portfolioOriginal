@@ -43,7 +43,7 @@ function HeaderNavbar() {
           <div className="flex mt-6 items-center py-2 lg:py-0">
             <MenuMotion>
             <span className={`text-3xl lg:text-4xl mt-5 ${h1light} hover:text-[#C850C0]`}>
-            <button onClick={() => theme.toogleTheme()}>
+            <button onClick={() => theme.toggleTheme()}>
               {theme.color === 'dark' ? <MdOutlineFlashlightOff /> : <MdOutlineFlashlightOn />}
               </button>
 

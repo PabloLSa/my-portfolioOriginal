@@ -1,22 +1,34 @@
 'use client';
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import ThemeContext from "./themeContext";
 
-
-
-function ThemeProviderContext ({ children }) {
+function ThemeProviderContext({ children }) {
   const [themeColor, setThemeColor] = useState("dark");
-  function toogleTheme() {
-    setThemeColor(themeColor === "dark" ? "light" : "dark");
-  };
 
+  const clickSoundRef = useRef(new Audio('/clickTurnOn.wav'));
+  const clickSound2Ref = useRef(new Audio('/clickTurnOff.wav'));
 
- return(
+  function toggleTheme() {
+    setThemeColor((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  }
 
-  <ThemeContext.Provider value={{ color: themeColor, toogleTheme }}>
+  // Adicione um useEffect para reproduzir o som quando o tema é alterado
+  useEffect(() => {
+    const clickSound = clickSoundRef.current;
+    const clickSound2 = clickSound2Ref.current;
+
+    if (themeColor === "light") {
+      clickSound.play();
+    } else {
+      clickSound2.play();
+    }
+  }, [themeColor]);
+
+  return (
+    <ThemeContext.Provider value={{ color: themeColor, toggleTheme }}>
       {children}
-   </ThemeContext.Provider>
- );
+    </ThemeContext.Provider>
+  );
 }
 
 export default ThemeProviderContext;
