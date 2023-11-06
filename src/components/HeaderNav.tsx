@@ -4,6 +4,7 @@ import ThemeContext from '../context/themeContext';
 import { MdOutlineFlashlightOff, MdOutlineFlashlightOn } from 'react-icons/md';
 import MenuHambuger from './MenuHambuger';
 import CloseMenu from './CloseMenu';
+import MenuMotion from '@/utils/MenuMotion';
 
 
 function HeaderNavbar() {
@@ -39,13 +40,15 @@ function HeaderNavbar() {
     <nav id="header" className={`lg:px-16 px-6 ${isDark} flex flex-wrap items-center lg:py-0 py-2`}>
       <div className="flex-1 flex justify-between items-center">
         <div className="flex text-lg font-semibold backdrop-filter">
-          <div className="flex items-center py-2 lg:py-0">
+          <div className="flex mt-6 items-center py-2 lg:py-0">
+            <MenuMotion>
             <span className={`text-3xl lg:text-4xl mt-5 ${h1light} hover:text-[#C850C0]`}>
             <button onClick={() => theme.toogleTheme()}>
               {theme.color === 'dark' ? <MdOutlineFlashlightOff /> : <MdOutlineFlashlightOn />}
               </button>
 
             </span>
+            </MenuMotion>
 
           </div>
           <div className='flex flex-col mt-4 justify-center ml-5 lg:ml-10'>
