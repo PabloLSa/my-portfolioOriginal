@@ -11,6 +11,7 @@ import FramerMotion from "@/utils/FramerMotion";
 import ScrollTop from "./ScrollToTopArrow";
 import AnimatedSocial from "./AnimatadeSocial";
 import MenuMotion from "@/utils/MenuMotion";
+import MotionContact from "@/utils/MotionContact";
 
 
 
@@ -159,9 +160,9 @@ function Contact() {
               whiteSpace: 'nowrap',
             }}
           >
-            <MenuMotion>
+            <MotionContact>
             <h1 className={`font-semibold mb-4 ${themeText}`}>Mensagem</h1>
-            </MenuMotion>
+            </MotionContact>
             <div className="flex flex-col max-w-xl m-auto lg:flex-row lg:flex-wrap">
               <input
                 type="text"
