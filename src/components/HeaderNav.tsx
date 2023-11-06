@@ -52,7 +52,7 @@ function HeaderNavbar() {
 
           </div>
           <div className='flex flex-col mt-4 justify-center ml-5 lg:ml-10'>
-            <h1 className={`font-bold text-xl lg:text-4xl ${h1light}`}
+            <h1 className={`texto-digitado font-bold text-xl lg:text-4xl ${h1light}`}
               style={{
                 boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
                 padding: '0.3em',

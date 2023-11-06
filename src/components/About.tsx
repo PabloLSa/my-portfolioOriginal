@@ -4,6 +4,7 @@ import themeContext from "@/context/themeContext";
 import { useContext, useState, useEffect } from "react";
 import AboutFramer from "@/utils/AboutFramer";
 import AnimatedSocial from "./AnimatadeSocial";
+import MenuMotion from "@/utils/MenuMotion";
 
 
 const About = () => {
@@ -51,7 +52,9 @@ const About = () => {
         </div>
 
         <div className="w-full md:w-1/2 text-left">
-          <h1 className={`texto-digitado font-bold text-2xl m-5 mb-0 ${themeText}`}>Desenvolvedor Web</h1>
+          <MenuMotion>
+          <h1 className={`font-bold text-2xl m-5 mb-0 ${themeText}`}>Desenvolvedor Web</h1>
+          </MenuMotion>
           <AboutFramer>
 
             <div className={`font-semibold text-xl m-5 ${themeText}`}> Campinas, São Paulo
