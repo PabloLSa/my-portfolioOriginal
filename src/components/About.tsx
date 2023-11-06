@@ -66,8 +66,9 @@ const About = () => {
               </button>
             </div>
             <p className={`text-left flex flex-col font-semibold m-5 ${textlight}`}>
-              Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
-              Minha jornada nesse universo de programação tem sido incrível, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
+              Sou um desenvolvedor Full Stack, com paixão pelo design Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
+              <br />
+              Minha jornada no universo de programação tem sido incrível, hoje sou capaz de criar interfaces para usuário que são não apenas atraentes, mas também responsivas e funcionais!!
             </p>
           </AboutFramer>
         </div>
