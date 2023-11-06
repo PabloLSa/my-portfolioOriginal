@@ -4,7 +4,7 @@ import themeContext from "@/context/themeContext";
 import { useContext, useState, useEffect } from "react";
 import AboutFramer from "@/utils/AboutFramer";
 import AnimatedSocial from "./AnimatadeSocial";
-import MenuMotion from "@/utils/MenuMotion";
+
 
 const About = () => {
   const theme = useContext(themeContext);
@@ -52,7 +52,7 @@ const About = () => {
 
         <div className="w-full md:w-1/2 text-left">
           <h1 className={`texto-digitado font-bold text-2xl m-5 mb-0 ${themeText}`}>Desenvolvedor Web</h1>
-          <MenuMotion>
+          <AboutFramer>
 
             <div className={`font-semibold text-xl m-5 ${themeText}`}> Campinas, São Paulo
 
@@ -66,7 +66,7 @@ const About = () => {
               Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
               Minha jornada nesse universo de programação tem sido incrível, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
             </p>
-          </MenuMotion>
+          </AboutFramer>
         </div>
       </div>
     </>
