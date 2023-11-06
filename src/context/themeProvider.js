@@ -7,7 +7,6 @@ function ThemeProviderContext({ children }) {
   const [clickSound, setClickSound] = useState(null);
   const [clickSound2, setClickSound2] = useState(null);
 
-  // Verifique se o código está sendo executado no navegador antes de criar os objetos Audio
   useEffect(() => {
     if (typeof window !== "undefined") {
       setClickSound(new Audio("/clickTurnOn.wav"));

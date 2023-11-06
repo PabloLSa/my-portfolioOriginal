@@ -120,7 +120,7 @@ function Contact() {
             <span className="span">
             
               <span className={`ml-2 text-center ${themeText}`}>Conecte-se</span>
-              <svg className="animate-pulse-stronger w-3.5 h-3.5 ml-2 mx-2 mt-1 text-purple-600" aria-hidden="true" fill="none" viewBox="0 0 14 10">
+              <svg className="w-3.5 h-3.5 ml-2 mx-2 mt-1 text-purple-600" aria-hidden="true" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
               </svg>
               <a href="https://www.linkedin.com/in/pablolandimdesadev/" target="_blank" rel="noreferrer"
