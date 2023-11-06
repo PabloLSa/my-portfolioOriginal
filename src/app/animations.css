@@ -13,3 +13,27 @@
   }
 }
 
+
+@keyframes pisca-pisca {
+  0% {
+    opacity: 0; /* Fica invisível */
+  }
+  50% {
+    opacity: 1; /* Fica visível */
+  }
+  100% {
+    opacity: 0; /* Fica invisível novamente */
+  }
+}
+
+@keyframes desaparecer {
+  to {
+    opacity: 0; /* Desaparece após 3 segundos (pode ajustar o tempo conforme necessário) */
+  }
+}
+
+.animate-pulse-stronger {
+  animation-name: pisca-pisca, desaparecer;
+  animation-duration: 1.5s, 3s;
+  animation-iteration-count: infinite, 1;
+}
