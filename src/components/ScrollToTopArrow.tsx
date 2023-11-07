@@ -15,15 +15,15 @@ const ScrollTop: React.FC = () => {
       clearTimeout(scrollTimer);
       scrollTimer = setTimeout(() => {
         setIsScrolling(false);
-      }, 1200); // Altere o valor (em milissegundos) conforme necessário
+      }, 1200); // Alterar o valor (em milissegundos) conforme necessário
 
     };
 
-    // Adicione um event listener para o evento de rolagem
+    // Adicionando um event listener para o evento de rolagem
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      // Remova o event listener ao desmontar o componente
+      // Removendo o event listener ao desmontar o componente
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
