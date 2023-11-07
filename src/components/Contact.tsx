@@ -12,6 +12,7 @@ import ScrollTop from "./ScrollToTopArrow";
 import AnimatedSocial from "./AnimatadeSocial";
 import MenuMotion from "@/utils/MenuMotion";
 import MotionContact from "@/utils/MotionContact";
+import RightMotion from "@/utils/RightMotion";
 
 
 
@@ -150,7 +151,7 @@ function Contact() {
         {/* Formulário */}
         <div className="p-5 lg:w-1/2">
 
-<FramerMotion>
+<RightMotion>
           <form className={`mb-6 text-3xl text-center rounded-lg mt-[-10px] lg:mt-6 ${containerContact}`}
             onSubmit={sendEmail}
             style={{
@@ -193,7 +194,7 @@ function Contact() {
               </div>
             </div>
           </form>
-          </FramerMotion>
+          </RightMotion>
 
         </div>
 
