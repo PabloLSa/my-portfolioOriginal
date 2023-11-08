@@ -13,13 +13,13 @@ function HeaderNavbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState("headerdark");
-  const[h1light, setH1Light] = useState("text-white text-shadow");
+  const[h1light, setH1Light] = useState("text-white");
 
   useEffect(() => {
 
     setIsDark(theme.color === 'light' ? 'headerlight' : 'headerdark');
 
-    setH1Light(theme.color === 'light' ? 'text-blue-950 text-shadow' : 'text-white');
+    setH1Light(theme.color === 'light' ? 'text-blue-950' : 'text-white');
 
 
   }, [theme.color]);
@@ -80,7 +80,7 @@ function HeaderNavbar() {
 <FramerMotion>
             <li className="py-2 lg:py-0 ">
               <a
-                className="flex text-shadow items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
+                className="flex items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
                 href="#about" onClick={toggleMenu}
               >
                 <div className="w-3 mr-1 h-3 xl:w-4 xl:h-4 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></div>
@@ -92,7 +92,7 @@ function HeaderNavbar() {
             <FramerMotion>
             <li className="py-2 lg:py-0">
               <a
-                className="flex text-shadow items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
+                className="flex items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
                 href="#project" onClick={toggleMenu}
               >
                 <div className="w-3 mr-1 h-3 xl:w-4 xl:h-4 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></div>
@@ -104,7 +104,7 @@ function HeaderNavbar() {
             <FramerMotion>
             <li className="py-2 lg:py-0">
               <a
-                className="flex text-shadow items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
+                className="flex items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
                 href="#contact" onClick={toggleMenu}
               >
                 <div className="w-3 mr-1 h-3 xl:w-4 xl:h-4 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></div>
