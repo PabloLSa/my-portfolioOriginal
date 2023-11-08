@@ -6,6 +6,7 @@ import MenuHambuger from './MenuHambuger';
 import CloseMenu from './CloseMenu';
 import MenuMotion from '@/utils/MenuMotion';
 import FramerMotion from '@/utils/FramerMotion';
+import LightMotion from '@/utils/LightMotion';
 
 
 function HeaderNavbar() {
@@ -33,14 +34,14 @@ function HeaderNavbar() {
       <div className="flex-1 flex justify-between items-center">
         <div className="flex text-lg font-semibold backdrop-filter">
           <div className="flex mt-6 items-center py-2 lg:py-0">
-            <MenuMotion>
+            <LightMotion>
             <span className={`text-3xl lg:text-4xl mt-5 ${h1light} hover:text-[#C850C0]`}>
             <button onClick={() => theme.toggleTheme()}>
               {theme.color === 'dark' ? <MdOutlineFlashlightOff /> : <MdOutlineFlashlightOn />}
               </button>
 
             </span>
-            </MenuMotion>
+            </LightMotion>
 
           </div>
           <div className='flex flex-col mt-4 justify-center ml-5 lg:ml-10'>
