@@ -5,6 +5,7 @@ import { MdOutlineFlashlightOff, MdOutlineFlashlightOn } from 'react-icons/md';
 import MenuHambuger from './MenuHambuger';
 import CloseMenu from './CloseMenu';
 import MenuMotion from '@/utils/MenuMotion';
+import FramerMotion from '@/utils/FramerMotion';
 
 
 function HeaderNavbar() {
@@ -76,7 +77,7 @@ function HeaderNavbar() {
       <div className={`lg:flex lg:items-center lg:w-auto w-full ${menuOpen ? 'block' : 'hidden'}`} id="menu-toogle">
         <nav>
           <ul className="text-xl text-l items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex  lg:pt-0">
-
+<FramerMotion>
             <li className="py-2 lg:py-0 ">
               <a
                 className="flex items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
@@ -87,6 +88,8 @@ function HeaderNavbar() {
                 Sobre mim
               </a>
             </li>
+            </FramerMotion>
+            <FramerMotion>
             <li className="py-2 lg:py-0">
               <a
                 className="flex items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
@@ -97,6 +100,8 @@ function HeaderNavbar() {
                 Projetos
               </a>
             </li>
+            </FramerMotion>
+            <FramerMotion>
             <li className="py-2 lg:py-0">
               <a
                 className="flex items-center text-transparent bg-gradient-to-br from-blue-500 via-purple-500 to bg-purple-400 bg-clip-text hover:text-[#C850C0] font-semibold rounded-lg hover:px-2 py-1"
@@ -106,6 +111,7 @@ function HeaderNavbar() {
                 Contato
               </a>
             </li>
+            </FramerMotion>
 
           </ul>
 
