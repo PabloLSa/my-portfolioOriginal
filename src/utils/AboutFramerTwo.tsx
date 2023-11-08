@@ -2,7 +2,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 
-function MenuMotion({ children } : any) {
+function AboutFramerTwo({ children } : any) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -22,4 +22,4 @@ function MenuMotion({ children } : any) {
     
   );
 }
-export default MenuMotion;
+export default AboutFramerTwo;

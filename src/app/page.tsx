@@ -16,9 +16,9 @@ export default function Home() {
 <About />
 <Carousel />
 <Contact />
-<ScrollTop />
-<ChatButton />
 <Footer />
+<ChatButton />
+<ScrollTop />
 </>
   )
 }

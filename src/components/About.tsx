@@ -5,6 +5,7 @@ import { useContext, useState, useEffect } from "react";
 import AboutFramer from "@/utils/AboutFramer";
 import AnimatedSocial from "./AnimatadeSocial";
 import MenuMotion from "@/utils/MenuMotion";
+import AboutFramerTwo from "@/utils/AboutFramerTwo";
 
 
 const About = () => {
@@ -52,9 +53,9 @@ const About = () => {
         </div>
 
         <div className="w-full md:w-1/2 text-left">
-          <MenuMotion>
+          <AboutFramerTwo>
           <h1 className={`font-bold text-2xl m-5 mb-0 ${themeText}`}>Desenvolvedor Web</h1>
-          </MenuMotion>
+          </AboutFramerTwo>
           <AboutFramer>
 
             <div className={`font-semibold text-xl m-5 ${themeText}`}> Campinas, São Paulo
