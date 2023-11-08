@@ -33,11 +33,11 @@ const Footer = () => {
         </div>
         </div>
 
-      <div className="text-left font-serif flex text-sm mt-3 ml-5 lg:mr-5 text-purple-600">
+      <div className="text-left font-serif flex text-sm mt-3 ml-2 lg:mr-5 text-purple-600">
         © 2023 por Pablo Landim.
       </div>
 
-      <a href="" className="text-right text-sm lg:text-xl mt-3 lg:mt-3 ml-1 md:ml-40 lg:ml-96 text-purple-600 hover:text-fuchsia-500"> 
+      <a href="" className="text-right text-sm lg:text-xl mt-4 lg:mt-3 ml-1 md:ml-40 lg:ml-96 text-purple-600 hover:text-fuchsia-500"> 
       <FaInstagram />
       </a>
 
