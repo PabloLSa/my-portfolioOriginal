@@ -37,7 +37,7 @@ const Footer = () => {
         © 2023 por Pablo Landim.
       </div>
 
-      <a href="" className="text-right text-xl mt-3 lg:mt-3 ml-1 md:ml-40 lg:ml-96 text-purple-600 hover:text-fuchsia-500"> 
+      <a href="" className="text-right text-xl mt-3 lg:mt-3 ml-2 md:ml-40 lg:ml-96 text-purple-600 hover:text-fuchsia-500"> 
       <FaInstagram />
       </a>
 
