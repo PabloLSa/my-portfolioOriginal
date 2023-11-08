@@ -4,7 +4,6 @@ import themeContext from "@/context/themeContext";
 import { useContext, useState, useEffect } from "react";
 import AboutFramer from "@/utils/AboutFramer";
 import AnimatedSocial from "./AnimatadeSocial";
-import MenuMotion from "@/utils/MenuMotion";
 import AboutFramerTwo from "@/utils/AboutFramerTwo";
 
 
@@ -12,7 +11,7 @@ const About = () => {
   const theme = useContext(themeContext);
   const [isDark, setIsDark] = useState("bg-gradient-to-br from-zinc-900 to-zinc-800");
   const [textlight, setH1Light] = useState("text-white");
-  const [themeText, setThemeText] = useState("text-transparent bg-gradient-to-br from-blue-700 via-purple-500 to-blue-900 bg-clip-text");
+  const [themeText, setThemeText] = useState("text-shadow text-transparent bg-gradient-to-br from-blue-700 via-purple-500 to-blue-900 bg-clip-text");
 
   useEffect(() => {
 
@@ -22,7 +21,7 @@ const About = () => {
 
     setThemeText(
       theme.color === 'light'
-        ? 'text-transparent bg-gradient-to-br from-blue-700 via-fuchsia-500 to-fuchsia-500 bg-clip-text'
+        ? 'text-shadow text-transparent bg-gradient-to-br from-blue-700 via-fuchsia-500 to-fuchsia-500 bg-clip-text'
         : 'text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text'
     );
 
