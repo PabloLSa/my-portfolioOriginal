@@ -1,7 +1,9 @@
 
 'use client';
 import themeContext from "@/context/themeContext";
+import Image from "next/image";
 import { useContext, useState, useEffect, use } from 'react';
+import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   const theme = useContext(themeContext);
@@ -15,12 +17,14 @@ const Footer = () => {
   return (
 
     <footer className={`footer h-20 w-full p-4 ${isDark}`}>
-      <div className="text-center mt-3 text-purple-600">
-
+    
+      <div className="text-center flex text-sm mt-3 ml-5 lg:ml-60 text-purple-600">
         © 2023 por Pablo Landim.
-
       </div>
-    </footer>
+
+  </footer>
+  
+
   )
 }
 
