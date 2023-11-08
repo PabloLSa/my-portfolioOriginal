@@ -131,7 +131,7 @@ function Contact() {
                 <BsGithub />
               </a>
             </span>
-            <div className="text-center ml-0 lg:ml-2 mt-[-4px]">
+            <div className="text-center ml-0 md:ml-7 lg:ml-2 mt-[-4px]">
               <p className="flex items-center text-sm text-purple-600 md:text-lg">
                 <MdEmail className="mr-2" />pablolandimdesa@gmail.com
               </p>
