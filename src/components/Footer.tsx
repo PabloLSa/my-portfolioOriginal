@@ -20,7 +20,7 @@ const Footer = () => {
     <footer className={`footer flex h-20 w-full p-4 ${isDark}`}>
 
       <FramerMotion>
-      <div className="text-left text-sm mt-2 lg:mt-1 ml-5 md:ml-40 lg:ml-60">
+      <div className="text-left text-sm mt-2 lg:mt-3 ml-5 md:ml-40 lg:ml-60">
   <div className="rounded-full">
     {/* Imagem para telas pequenas (oculta em telas md e lg) */}
     <Image
@@ -43,10 +43,10 @@ const Footer = () => {
 
       </FramerMotion>
       <FramerMotion>
-        <div className="text-left font-serif flex text-sm md:text-xl lg:text-2xl mt-3 lg:mt-1 ml-2 lg:mr-5 text-purple-600">
+        <div className="text-left font-serif flex text-sm md:text-xl lg:text-2xl mt-3 lg:mt-4 ml-2 lg:mr-5 text-purple-600">
           © 2023 por Pablo Landim.
 
-        <a href="" className="text-right text-sm lg:text-2xl mt-1 md:text-xl lg:mt-1 ml-2 md:ml-40 lg:ml-80 text-purple-600 hover:text-fuchsia-500">
+        <a href="" className="text-right text-sm lg:text-2xl mt-1 md:text-xl lg:mt-2 ml-2 md:ml-40 lg:ml-80 text-purple-600 hover:text-fuchsia-500">
           <FaInstagram />
         </a>
         </div>
