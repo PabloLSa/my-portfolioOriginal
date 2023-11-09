@@ -1,5 +1,5 @@
 'use client';
-import FramerMotion from '@/utils/FramerMotion';
+import LeftMotion from '@/utils/LeftMotion';
 import React, { useState, useEffect } from 'react';
 
 const ScrollTop: React.FC = () => {
@@ -29,7 +29,7 @@ const ScrollTop: React.FC = () => {
   }, []);
 
   return (
-<FramerMotion>
+<LeftMotion>
     <div>
       {isScrolling && (
 
@@ -57,7 +57,7 @@ const ScrollTop: React.FC = () => {
 
 )}
     </div>
-</ FramerMotion>
+</ LeftMotion>
   );
 };
 
