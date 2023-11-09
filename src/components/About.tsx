@@ -59,15 +59,13 @@ const About = () => {
 
             <div className={`font-semibold text-xl m-5 ${themeText}`}> Campinas, São Paulo
 
-              <button className={`group relative text-sm ml-3 hover:px-5 rounded-xl border p-2 border-solid border-purple-600 ${themeText}`}>
+              <a href="/CV-Front-end.pdf"
+                  download="CV-Front-end.pdf" className={`group relative text-sm ml-3 hover:px-5 rounded-xl border p-2 border-solid border-purple-600 ${themeText}`}>
 
-                <a
-                  href="/CV-Front-end.pdf"
-                  download="CV-Front-end.pdf"
-                >
+                
                   <div className="absolute inset-0 h-full scale-0 rounded-lg transition-all duration-700 group-hover:scale-75 group-hover:bg-[#C850C0]/40"></div>
                   Download CV
-                </a>              </button>
+                         </a>
             </div>
             <p className={`text-left flex flex-col font-semibold m-5 ${textlight}`}>
               Sou um desenvolvedor Full Stack, com paixão pelo design Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
