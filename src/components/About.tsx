@@ -64,7 +64,6 @@ const About = () => {
                 <a
                   href="/CV-Front-end.pdf"
                   download="CV-Front-end.pdf"
-                  className="block h-full w-full"
                 >
                   <div className="absolute inset-0 h-full scale-0 rounded-lg transition-all duration-700 group-hover:scale-75 group-hover:bg-[#C850C0]/40"></div>
                   Download CV
