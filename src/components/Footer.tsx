@@ -1,7 +1,7 @@
 
 'use client';
 import themeContext from "@/context/themeContext";
-import Tagup from "@/utils/TagUp";
+import LeftMotion from "@/utils/LeftMotion";
 import Image from "next/image";
 import { useContext, useState, useEffect, use } from 'react';
 import { FaInstagram } from "react-icons/fa";
@@ -19,7 +19,7 @@ const Footer = () => {
 
     <footer className={`footer flex h-20 w-full p-4 ${isDark}`}>
 
-      <Tagup>
+      <LeftMotion>
         <div className="text-left text-sm mt-2 lg:mt-3 ml-5 md:ml-40 lg:ml-60">
           <div className="rounded-full">
             {/* Imagem para telas pequenas (oculta em telas md e lg) */}
@@ -41,8 +41,8 @@ const Footer = () => {
           </div>
         </div>
 
-      </ Tagup >
-      <Tagup>
+      </ LeftMotion >
+      <LeftMotion>
         <div className="text-left font-serif flex text-sm md:text-xl lg:text-2xl mt-3 lg:mt-4 ml-2 lg:mr-5 text-purple-600">
           © 2023 por Pablo Landim.
 
@@ -50,7 +50,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
         </div>
-      </Tagup>
+      </LeftMotion>
 
 
 
