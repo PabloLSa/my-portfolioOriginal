@@ -60,8 +60,8 @@ const About = () => {
             <div className={`font-semibold text-xl m-5 ${themeText}`}> Campinas, São Paulo
 
               <button className={`group relative text-sm ml-3 hover:px-5 rounded-xl border p-2 border-solid border-purple-600 ${themeText}`}>
-                <a href="/CV-Front-end.pdf" target="_blank" rel="noreferrer"
-                  download="CV-Front-end.pdf"
+                <a href="/CV-Front-end.pdf"
+                  download="/CV-Front-end.pdf"
                 >
 
                 </a>
