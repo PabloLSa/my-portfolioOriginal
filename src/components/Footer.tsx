@@ -28,7 +28,7 @@ const Footer = () => {
       alt="logotipo"
       width={20}
       height={20}
-      className="hidden md:inline lg:inline xl:hidden"
+      className="inline md:hiddem lg:inline xl:hidden"
     />
     {/* Imagem para telas md e lg (oculta em telas pequenas) */}
     <Image
