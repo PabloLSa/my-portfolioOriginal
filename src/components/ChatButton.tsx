@@ -1,5 +1,5 @@
 'use client';
-import FramerMotion from '@/utils/FramerMotion';
+import LeftMotion from '@/utils/LeftMotion';
 import React from 'react';
 
 const ChatButton = () => {
@@ -7,7 +7,7 @@ const ChatButton = () => {
 
 
   return (
-    <FramerMotion>
+    <LeftMotion>
 
       <>
         <div className="relative" id="contact">
@@ -39,7 +39,7 @@ const ChatButton = () => {
           </a>
         </div>
       </>
-    </FramerMotion>
+    </LeftMotion>
   );
 }
 
