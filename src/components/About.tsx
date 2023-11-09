@@ -2,9 +2,9 @@
 import Image from "next/image";
 import themeContext from "@/context/themeContext";
 import { useContext, useState, useEffect } from "react";
-import AboutFramer from "@/utils/AboutFramer";
+import TagUp from "@/utils/TagUp";
 import AnimatedSocial from "./AnimatadeSocial";
-import AboutFramerTwo from "@/utils/AboutFramerTwo";
+import TagDow from "@/utils/TagDow";
 
 
 const About = () => {
@@ -52,10 +52,10 @@ const About = () => {
         </div>
 
         <div className="w-full md:w-1/2 text-left">
-          <AboutFramerTwo>
+          <TagDow>
             <h1 className={`font-bold text-2xl m-5 mb-0 ${themeText}`}>Desenvolvedor Web</h1>
-          </AboutFramerTwo>
-          <AboutFramer>
+          </TagDow>
+          <TagUp>
 
             <div className={`font-semibold text-xl m-5 ${themeText}`}> Campinas, São Paulo
 
@@ -75,7 +75,7 @@ const About = () => {
               <br />
               Minha jornada no universo de programação tem sido incrível, hoje sou capaz de criar interfaces para usuário que são não apenas atraentes, mas também responsivas e funcionais!!
             </p>
-          </AboutFramer>
+          </TagUp>
         </div>
       </div>
     </>

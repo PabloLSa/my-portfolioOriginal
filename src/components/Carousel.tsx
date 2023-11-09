@@ -6,7 +6,7 @@ import { FaReact } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 import themeContext from "@/context/themeContext";
-import FramerMotion from '@/utils/FramerMotion';
+import LeftMotion from '@/utils/LeftMotion';
 
 
 
@@ -51,7 +51,7 @@ const Carousel = () => {
 
   return (
     <div className={`${isDark}`}>
-      <FramerMotion>
+      <LeftMotion>
         <div className={`w-full flex text-center items-center justify-center max-h-72 relative overflow-hidden mx-auto`}>
 
 
@@ -124,7 +124,7 @@ const Carousel = () => {
 
           </div>
         </div>
-      </FramerMotion>
+      </LeftMotion>
 
     </div>
 

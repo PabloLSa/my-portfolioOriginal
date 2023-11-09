@@ -1,4 +1,4 @@
-import FramerMotion from "@/utils/FramerMotion";
+import LeftMotion from "@/utils/LeftMotion";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { useEffect, useState, useContext, use } from "react";
 import themeContext from "@/context/themeContext";
@@ -18,7 +18,7 @@ const AnimatedSocial = () => {
   return (
     
     <div className="flex flex-col gap-8">
-<FramerMotion>
+<LeftMotion>
 
       <div className="border-none lg:border-l-2 mt-14 ml-3 lg:ml-10 lg:mt-12 lg:border-solid border-purple-600">
 
@@ -35,7 +35,7 @@ const AnimatedSocial = () => {
         </a>
 
       </div>
-      </FramerMotion>
+      </LeftMotion>
 
     </div>
   );
