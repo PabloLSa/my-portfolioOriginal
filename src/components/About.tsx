@@ -64,8 +64,8 @@ const About = () => {
                   download="/CV-Front-end.pdf"
                 >
 
-                </a>
                 <div className="absolute inset-0 h-full scale-0 rounded-lg transition-all duration-700 group-hover:scale-75 group-hover:bg-[#C850C0]/40"></div>
+                </a>
 
                 Dowload CV
               </button>
