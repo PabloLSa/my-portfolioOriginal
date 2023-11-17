@@ -4,15 +4,16 @@ import ThemeContext from "./themeContext";
 
 
 function ThemeProviderContext({ children }) {
+  const isLocalStorageAvailable = typeof localStorage !== 'undefined';
   // Retrieve themeColor from local storage on component mount
-  const savedTheme = localStorage.getItem("themeColor");
+  const savedTheme = isLocalStorageAvailable ? localStorage.getItem("themeColor") : null;
   const [themeColor, setThemeColor] = useState(savedTheme || "dark");
-  const [clickSound, setClickSound] = useState(null);
+  // const [clickSound, setClickSound] = useState(null);
   const [clickSound2, setClickSound2] = useState(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setClickSound(new Audio("/clickTurnOn.wav"));
+      // setClickSound(new Audio("/clickTurnOn.wav"));
       setClickSound2(new Audio("/clickTurnOff.wav"));
     }
   }, []);
