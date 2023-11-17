@@ -92,7 +92,7 @@ function Contact() {
     <>
       <div className={`flex flex-col lg:flex-row ${container}`} id="contact">
         {/* Card de Contato */}
-        <div className="p-5 lg:w-1/2">
+        <div className="p-5 lg:w-1/2 xl:w-1/2">
 <LeftMotion>
           <div className={`mt-0 lg:mt-14 max-w-none max-h-none ${containerContact}`}
             style={{
@@ -145,7 +145,7 @@ function Contact() {
             </LeftMotion>
         </div>
         {/* Formulário */}
-        <div className="p-5 lg:w-1/2">
+        <div className="p-5 lg:w-1/2 xl:w-1/2">
 
 <LeftMotion>
           <form className={`mb-6 text-3xl text-center rounded-lg mt-[-10px] lg:mt-6 ${containerContact}`}
