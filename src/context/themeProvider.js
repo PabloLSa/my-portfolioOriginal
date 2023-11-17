@@ -2,8 +2,11 @@
 import { useState, useEffect } from "react";
 import ThemeContext from "./themeContext";
 
+
 function ThemeProviderContext({ children }) {
-  const [themeColor, setThemeColor] = useState("dark");
+  // Retrieve themeColor from local storage on component mount
+  const savedTheme = localStorage.getItem("themeColor");
+  const [themeColor, setThemeColor] = useState(savedTheme || "dark");
   const [clickSound, setClickSound] = useState(null);
   const [clickSound2, setClickSound2] = useState(null);
 
@@ -14,13 +17,18 @@ function ThemeProviderContext({ children }) {
     }
   }, []);
 
+  // Update local storage when themeColor changes
+  useEffect(() => {
+    localStorage.setItem("themeColor", themeColor);
+  }, [themeColor]);
+
   function toggleTheme() {
     setThemeColor((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
 
     if (themeColor === "light") {
       clickSound2.play();
     } else {
-      clickSound.play();
+      clickSound2.play();
     }
   }
 
