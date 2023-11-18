@@ -12,11 +12,13 @@ import LeftMotion from '@/utils/LeftMotion';
 
 const Carousel = () => {
   const theme = useContext(themeContext);
-  const [isDark, setIsDark] = useState("bg-gradient-to-br from-zinc-900 to-zinc-800");
+  const [isDark, setIsDark] = useState(theme.color === 'light' ? 'bg-gradient-to-l from-white via-cyan-300' : 'bg-gradient-to-bl from-zinc-900 to-zinc-800');
   const totalSlides = 4; // Número total de slides
   const [slideIndex, setSlideIndex] = useState(0);
   const [buttonClasses, setButtonClasses] = useState(["bg-white", "bg-white", "bg-white, bg-white"]);
-  const [themeText, setThemeText] = useState("text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text");
+  const [themeText, setThemeText] = useState(theme.color === 'light'
+  ? 'text-transparent bg-gradient-to-br from-blue-700 via-fuchsia-500 to-fuchsia-500 bg-clip-text'
+  : 'text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text');
 
   useEffect(() => {
 

@@ -12,8 +12,8 @@ function HeaderNavbar() {
   const theme = useContext(ThemeContext);
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState("headerdark");
-  const[h1light, setH1Light] = useState("text-white");
+  const [isDark, setIsDark] = useState(theme.color === 'light' ? 'headerlight' : 'headerdark');
+  const[h1light, setH1Light] = useState(theme.color === 'light' ? 'text-blue-950' : 'text-white');
 
   useEffect(() => {
 

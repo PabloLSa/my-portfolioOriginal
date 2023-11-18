@@ -6,7 +6,7 @@ import themeContext from "@/context/themeContext";
 const AnimatedSocial = () => {
 
   const theme = useContext(themeContext);
-  const [isDark, setIsDark] = useState("text-cyan-500");
+  const [isDark, setIsDark] = useState(theme.color === 'light' ? 'text-purple-600' : 'text-cyan-500');
 
   useEffect(() => {
       

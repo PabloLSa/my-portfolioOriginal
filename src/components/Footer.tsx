@@ -3,12 +3,12 @@
 import themeContext from "@/context/themeContext";
 import LeftMotion from "@/utils/LeftMotion";
 import Image from "next/image";
-import { useContext, useState, useEffect, use } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const theme = useContext(themeContext);
-  const [isDark, setIsDark] = useState("bg-zinc-900");
+  const [isDark, setIsDark] = useState(theme.color === 'light' ? 'bg-gradient-to-l from-white via-cyan-300 to-white' : 'bg-zinc-900');
 
   useEffect(() => {
     setIsDark(theme.color === 'light' ? 'bg-gradient-to-l from-white via-cyan-300 to-white' : 'bg-zinc-900');

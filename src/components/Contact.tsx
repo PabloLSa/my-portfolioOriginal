@@ -17,11 +17,15 @@ function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [container, setContainer] = useState("containerDark");
-  const [containerContact, setContainerContact] = useState(" .container-contact-dark");
-  const [input, setInput] = useState('input-contact-dark');
-  const [textArea, setTextArea] = useState('textarea-dark');
-  const [themeText, setThemeText] = useState("text-transparent bg-gradient-to-br from-blue-700 via-purple-500 to-blue-900 bg-clip-text");
+  const [container, setContainer] = useState(theme.color === 'light' ? 'containerLight' : 'containerDark');
+  const [containerContact, setContainerContact] = useState(theme.color === 'light' ? 'container-contact-light' : 'container-contact-dark');
+  const [input, setInput] = useState(theme.color === 'light' ? 'input-contact-light' : 'input-contact-dark');
+  const [textArea, setTextArea] = useState(theme.color === 'light'
+  ? 'textarea-white'
+  : 'textarea-dark');
+  const [themeText, setThemeText] = useState(theme.color === 'light'
+  ? 'text-transparent bg-gradient-to-br from-blue-700 via-fuchsia-500 to-fuchsia-500 bg-clip-text'
+  : 'text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text');
 
 
   function sendEmail(e: any) {

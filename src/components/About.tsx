@@ -9,9 +9,11 @@ import TagDow from "@/utils/TagDow";
 
 const About = () => {
   const theme = useContext(themeContext);
-  const [isDark, setIsDark] = useState("bg-gradient-to-br from-zinc-900 to-zinc-800");
-  const [textlight, setH1Light] = useState("text-white");
-  const [themeText, setThemeText] = useState("text-shadow text-transparent bg-gradient-to-br from-blue-700 via-purple-500 to-blue-900 bg-clip-text");
+  const [isDark, setIsDark] = useState(theme.color === 'light' ? 'bg-gradient-to-l from-white via-cyan-300' : 'bg-gradient-to-br from-zinc-900 to-zinc-800');
+  const [textlight, setH1Light] = useState(theme.color === 'light' ? 'text-blue-950' : 'text-white');
+  const [themeText, setThemeText] = useState(theme.color === 'light'
+  ? 'text-shadow text-transparent bg-gradient-to-br from-blue-700 via-fuchsia-500 to-fuchsia-500 bg-clip-text'
+  : 'text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text');
 
   useEffect(() => {
 
